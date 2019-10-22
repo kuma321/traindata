@@ -3,27 +3,61 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C65D44D2358D90E00A66E57 /* WeatherConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C65D44C2358D90E00A66E57 /* WeatherConnect.swift */; };
 		1C8565672347059B0022B6D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8565662347059B0022B6D5 /* AppDelegate.swift */; };
 		1C8565692347059B0022B6D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8565682347059B0022B6D5 /* SceneDelegate.swift */; };
 		1C85656B2347059B0022B6D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85656A2347059B0022B6D5 /* ViewController.swift */; };
-		1C85656E2347059B0022B6D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C85656C2347059B0022B6D5 /* Main.storyboard */; };
 		1C8565702347059E0022B6D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C85656F2347059E0022B6D5 /* Assets.xcassets */; };
-		1C8565732347059E0022B6D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8565712347059E0022B6D5 /* LaunchScreen.storyboard */; };
+		1C85657D234705FB0022B6D5 /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85657C234705FB0022B6D5 /* CurrentTime.swift */; };
+		1C85657F234706080022B6D5 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85657E234706080022B6D5 /* Alarm.swift */; };
+		1C856581234706130022B6D5 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C856580234706130022B6D5 /* SetViewController.swift */; };
+		1C8565832347061D0022B6D5 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8565822347061D0022B6D5 /* SleepViewController.swift */; };
+		1C8565852347062E0022B6D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8565842347062E0022B6D5 /* HomeViewController.swift */; };
+		1C8565882347065C0022B6D5 /* Mainstory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8565862347065C0022B6D5 /* Mainstory.storyboard */; };
+		1C85658A234706DE0022B6D5 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C856589234706DE0022B6D5 /* TrainViewController.swift */; };
+		1C85658C23470E800022B6D5 /* ExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85658B23470E7F0022B6D5 /* ExplainViewController.swift */; };
+		1C85658E234710180022B6D5 /* SetUP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C85658D234710180022B6D5 /* SetUP.storyboard */; };
+		1C8565902347109F0022B6D5 /* 画像 in Resources */ = {isa = PBXBuildFile; fileRef = 1C85658F2347109F0022B6D5 /* 画像 */; };
+		1C856595234B02920022B6D5 /* Clock-Alarm05-2(Low).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C856594234B02920022B6D5 /* Clock-Alarm05-2(Low).mp3 */; };
+		1C85659D234C5F950022B6D5 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85659C234C5F950022B6D5 /* SelectViewController.swift */; };
+		1CA230F12356B4F1002AF16E /* alerm1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1CA230F02356B4F1002AF16E /* alerm1.mp3 */; };
+		1CA230F323583C96002AF16E /* OdaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA230F223583C95002AF16E /* OdaViewController.swift */; };
+		1CA230F523584471002AF16E /* MetoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA230F423584471002AF16E /* MetoroViewController.swift */; };
+		1CFC807E234FA05800DA9F1A /* NetConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC807D234FA05800DA9F1A /* NetConnect.swift */; };
+		7CA51C4FC84AA6714A6391DF /* Pods_traindeta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04F2494F2CD27C91C4074E9 /* Pods_traindeta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C8565632347059B0022B6D5 /* traindeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traindeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C65D44C2358D90E00A66E57 /* WeatherConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConnect.swift; sourceTree = "<group>"; };
+		1C8565632347059B0022B6D5 /* あらーむ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "あらーむ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8565662347059B0022B6D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C8565682347059B0022B6D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1C85656A2347059B0022B6D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C85656D2347059B0022B6D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C85656F2347059E0022B6D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1C8565722347059E0022B6D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C8565742347059E0022B6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C85657C234705FB0022B6D5 /* CurrentTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentTime.swift; path = ../../TrainOpendata/TrainOpendata/CurrentTime.swift; sourceTree = "<group>"; };
+		1C85657E234706080022B6D5 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alarm.swift; path = ../../TrainOpendata/TrainOpendata/Alarm.swift; sourceTree = "<group>"; };
+		1C856580234706130022B6D5 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetViewController.swift; path = ../../TrainOpendata/TrainOpendata/SetViewController.swift; sourceTree = "<group>"; };
+		1C8565822347061D0022B6D5 /* SleepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SleepViewController.swift; path = ../../TrainOpendata/TrainOpendata/SleepViewController.swift; sourceTree = "<group>"; };
+		1C8565842347062E0022B6D5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../TrainOpendata/TrainOpendata/HomeViewController.swift; sourceTree = "<group>"; };
+		1C8565872347065C0022B6D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../TrainOpendata/TrainOpendata/Base.lproj/Mainstory.storyboard; sourceTree = "<group>"; };
+		1C856589234706DE0022B6D5 /* TrainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainViewController.swift; path = ../../TrainOpendata/TrainOpendata/TrainViewController.swift; sourceTree = "<group>"; };
+		1C85658B23470E7F0022B6D5 /* ExplainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExplainViewController.swift; path = ../../TrainOpendata/TrainOpendata/ExplainViewController.swift; sourceTree = "<group>"; };
+		1C85658D234710180022B6D5 /* SetUP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetUP.storyboard; sourceTree = "<group>"; };
+		1C85658F2347109F0022B6D5 /* 画像 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "画像"; sourceTree = SOURCE_ROOT; };
+		1C856594234B02920022B6D5 /* Clock-Alarm05-2(Low).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Clock-Alarm05-2(Low).mp3"; path = "../../../Downloads/Clock-Alarm05-mp3 (1)/Clock-Alarm05-2(Low).mp3"; sourceTree = "<group>"; };
+		1C85659C234C5F950022B6D5 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		1CA230F02356B4F1002AF16E /* alerm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alerm1.mp3; sourceTree = "<group>"; };
+		1CA230F223583C95002AF16E /* OdaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaViewController.swift; sourceTree = "<group>"; };
+		1CA230F423584471002AF16E /* MetoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetoroViewController.swift; sourceTree = "<group>"; };
+		1CFC807D234FA05800DA9F1A /* NetConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetConnect.swift; sourceTree = "<group>"; };
+		32C0135A81E1311AFAC8A573 /* Pods-traindeta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traindeta.debug.xcconfig"; path = "Target Support Files/Pods-traindeta/Pods-traindeta.debug.xcconfig"; sourceTree = "<group>"; };
+		7903B50D436911E86054B10D /* Pods-traindeta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traindeta.release.xcconfig"; path = "Target Support Files/Pods-traindeta/Pods-traindeta.release.xcconfig"; sourceTree = "<group>"; };
+		B04F2494F2CD27C91C4074E9 /* Pods_traindeta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traindeta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA51C4FC84AA6714A6391DF /* Pods_traindeta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,13 +77,15 @@
 			children = (
 				1C8565652347059B0022B6D5 /* traindeta */,
 				1C8565642347059B0022B6D5 /* Products */,
+				4D8DB89AC7E66AF50B71703D /* Pods */,
+				44BC08B8052DC4C77C466E22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		1C8565642347059B0022B6D5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C8565632347059B0022B6D5 /* traindeta.app */,
+				1C8565632347059B0022B6D5 /* あらーむ.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +96,44 @@
 				1C8565662347059B0022B6D5 /* AppDelegate.swift */,
 				1C8565682347059B0022B6D5 /* SceneDelegate.swift */,
 				1C85656A2347059B0022B6D5 /* ViewController.swift */,
-				1C85656C2347059B0022B6D5 /* Main.storyboard */,
+				1C856580234706130022B6D5 /* SetViewController.swift */,
+				1C8565822347061D0022B6D5 /* SleepViewController.swift */,
+				1C8565842347062E0022B6D5 /* HomeViewController.swift */,
+				1C85658B23470E7F0022B6D5 /* ExplainViewController.swift */,
+				1C856589234706DE0022B6D5 /* TrainViewController.swift */,
+				1CA230F223583C95002AF16E /* OdaViewController.swift */,
+				1CA230F423584471002AF16E /* MetoroViewController.swift */,
+				1C85659C234C5F950022B6D5 /* SelectViewController.swift */,
 				1C85656F2347059E0022B6D5 /* Assets.xcassets */,
-				1C8565712347059E0022B6D5 /* LaunchScreen.storyboard */,
+				1C8565862347065C0022B6D5 /* Mainstory.storyboard */,
 				1C8565742347059E0022B6D5 /* Info.plist */,
+				1C85657E234706080022B6D5 /* Alarm.swift */,
+				1C65D44C2358D90E00A66E57 /* WeatherConnect.swift */,
+				1CFC807D234FA05800DA9F1A /* NetConnect.swift */,
+				1C85657C234705FB0022B6D5 /* CurrentTime.swift */,
+				1C85658D234710180022B6D5 /* SetUP.storyboard */,
+				1CA230F02356B4F1002AF16E /* alerm1.mp3 */,
+				1C856594234B02920022B6D5 /* Clock-Alarm05-2(Low).mp3 */,
+				1C85658F2347109F0022B6D5 /* 画像 */,
 			);
 			path = traindeta;
+			sourceTree = "<group>";
+		};
+		44BC08B8052DC4C77C466E22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B04F2494F2CD27C91C4074E9 /* Pods_traindeta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D8DB89AC7E66AF50B71703D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32C0135A81E1311AFAC8A573 /* Pods-traindeta.debug.xcconfig */,
+				7903B50D436911E86054B10D /* Pods-traindeta.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C8565772347059E0022B6D5 /* Build configuration list for PBXNativeTarget "traindeta" */;
 			buildPhases = (
+				B1192BAC22EA716B1F8C9E1E /* [CP] Check Pods Manifest.lock */,
 				1C85655F2347059B0022B6D5 /* Sources */,
 				1C8565602347059B0022B6D5 /* Frameworks */,
 				1C8565612347059B0022B6D5 /* Resources */,
+				05AC1CA8E1112576A14DAD92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +155,7 @@
 			);
 			name = traindeta;
 			productName = traindeta;
-			productReference = 1C8565632347059B0022B6D5 /* traindeta.app */;
+			productReference = 1C8565632347059B0022B6D5 /* あらーむ.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,42 +196,91 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C8565732347059E0022B6D5 /* LaunchScreen.storyboard in Resources */,
+				1C8565902347109F0022B6D5 /* 画像 in Resources */,
+				1C856595234B02920022B6D5 /* Clock-Alarm05-2(Low).mp3 in Resources */,
+				1C85658E234710180022B6D5 /* SetUP.storyboard in Resources */,
 				1C8565702347059E0022B6D5 /* Assets.xcassets in Resources */,
-				1C85656E2347059B0022B6D5 /* Main.storyboard in Resources */,
+				1CA230F12356B4F1002AF16E /* alerm1.mp3 in Resources */,
+				1C8565882347065C0022B6D5 /* Mainstory.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05AC1CA8E1112576A14DAD92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-traindeta/Pods-traindeta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-traindeta/Pods-traindeta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-traindeta/Pods-traindeta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1192BAC22EA716B1F8C9E1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-traindeta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C85655F2347059B0022B6D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA230F323583C96002AF16E /* OdaViewController.swift in Sources */,
+				1C85657D234705FB0022B6D5 /* CurrentTime.swift in Sources */,
 				1C85656B2347059B0022B6D5 /* ViewController.swift in Sources */,
 				1C8565672347059B0022B6D5 /* AppDelegate.swift in Sources */,
+				1CA230F523584471002AF16E /* MetoroViewController.swift in Sources */,
 				1C8565692347059B0022B6D5 /* SceneDelegate.swift in Sources */,
+				1C65D44D2358D90E00A66E57 /* WeatherConnect.swift in Sources */,
+				1CFC807E234FA05800DA9F1A /* NetConnect.swift in Sources */,
+				1C85659D234C5F950022B6D5 /* SelectViewController.swift in Sources */,
+				1C8565832347061D0022B6D5 /* SleepViewController.swift in Sources */,
+				1C8565852347062E0022B6D5 /* HomeViewController.swift in Sources */,
+				1C856581234706130022B6D5 /* SetViewController.swift in Sources */,
+				1C85658A234706DE0022B6D5 /* TrainViewController.swift in Sources */,
+				1C85657F234706080022B6D5 /* Alarm.swift in Sources */,
+				1C85658C23470E800022B6D5 /* ExplainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1C85656C2347059B0022B6D5 /* Main.storyboard */ = {
+		1C8565862347065C0022B6D5 /* Mainstory.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1C85656D2347059B0022B6D5 /* Base */,
+				1C8565872347065C0022B6D5 /* Base */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1C8565712347059E0022B6D5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C8565722347059E0022B6D5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Mainstory.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,6 +402,7 @@
 		};
 		1C8565782347059E0022B6D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C0135A81E1311AFAC8A573 /* Pods-traindeta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,7 +413,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = l.traindeta;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "あらーむ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +421,7 @@
 		};
 		1C8565792347059E0022B6D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7903B50D436911E86054B10D /* Pods-traindeta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +432,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = l.traindeta;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "あらーむ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
