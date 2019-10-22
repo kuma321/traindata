@@ -73,7 +73,7 @@ class HomeViewController: UIViewController,CLLocationManagerDelegate {
                         //self.tenki1.text = time1.suffix(8)
                     }
                     if i == 1{
-                
+                        print("二番目")
                     }
                     if i == 2{
                         
