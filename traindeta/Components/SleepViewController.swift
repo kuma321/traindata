@@ -12,14 +12,18 @@ class SleepViewController: UIViewController {
     
     var currentTime = CurrentTime()
     let alarm = Alarm()
+    var normal :CGFloat = 0
     @IBOutlet weak var timeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        normal = UIScreen.main.brightness
+        UIScreen.main.brightness = 0.0
         currentTime.delegate = self
     }
     
     @IBAction func timeup(_ sender: UIButton) {
+        UIScreen.main.brightness = CGFloat(normal)
            self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
         
     }

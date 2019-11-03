@@ -42,9 +42,8 @@ class MetoroViewController: UIViewController,UITableViewDataSource{
                         let json = JSON(object)
                                        json.forEach { (_, json) in
                                            let article: [String: String?] = [
-                                               "title": json["@id"].stringValue,
-                                               "userId": json["@type"].stringValue,
-                                               "train":json["odpt:trainInformationText"]["ja"].stringValue,
+                                            "train":json["odpt:trainInformationStatus"]["ja"].stringValue,
+                                            "traininfo":json["odpt:trainInformationText"].stringValue
                                            ]
                                            self.articles.append(article)
                                        }

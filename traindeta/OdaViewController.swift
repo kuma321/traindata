@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 
-class OdaViewController: UIViewController,UITableViewDataSource {
+class OdaViewController: UIViewController,UITableViewDataSource,UITableViewDelegate{
     let table = UITableView()
     var articles: [[String: String?]] = []
     var addBtn: UIBarButtonItem!
@@ -23,6 +23,8 @@ class OdaViewController: UIViewController,UITableViewDataSource {
                title = "遅延情報"
         addBtn = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(self.onClick))
                 self.navigationItem.leftBarButtonItem = addBtn
+                table.dataSource = self
+                table.delegate = self
                table.frame = view.frame
                view.addSubview(table)
                table.dataSource = self
@@ -40,9 +42,9 @@ class OdaViewController: UIViewController,UITableViewDataSource {
                     let json = JSON(object)
                                    json.forEach { (_, json) in
                                        let article: [String: String?] = [
-                                           "title": json["@id"].stringValue,
-                                           "userId": json["@type"].stringValue,
-                                           "train":json["odpt:trainInformationText"]["ja"].stringValue,
+
+                                        "train":json["odpt:trainInformationStatus"]["ja"].stringValue,
+                                                 "traininfo":json["odpt:trainInformationText"].stringValue
                                        ]
                                        self.articles.append(article)
                                    }
@@ -72,5 +74,11 @@ class OdaViewController: UIViewController,UITableViewDataSource {
     @objc func onClick() {
           let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "Select") as! SelectViewController
           self.present(secondViewController, animated: true, completion: nil)}
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        print("\(indexPath.row)番セルが押されたよ！")
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "PopupViewController") else { return }
+        self.present(vc, animated: false, completion: nil)
+    }
 
 }

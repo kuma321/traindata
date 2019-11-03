@@ -10,13 +10,12 @@ import UIKit
 
 class SelectViewController: UIViewController {
 
-    
-    @IBOutlet weak var tableView: UITableView!
+
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iPhone XR-XS Max –　統一.png")!)
         // Do any additional setup after loading the view.
     }
     

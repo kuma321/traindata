@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0AA03E236CA2F6006691F3 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AA03D236CA2F6006691F3 /* PopupViewController.swift */; };
+		1C4790022362AAE200243684 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4790012362AAE200243684 /* FavoriteViewController.swift */; };
+		1C4790042362ADC000243684 /* TrainName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4790032362ADC000243684 /* TrainName.swift */; };
 		1C65D44D2358D90E00A66E57 /* WeatherConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C65D44C2358D90E00A66E57 /* WeatherConnect.swift */; };
 		1C8565672347059B0022B6D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8565662347059B0022B6D5 /* AppDelegate.swift */; };
 		1C8565692347059B0022B6D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8565682347059B0022B6D5 /* SceneDelegate.swift */; };
 		1C85656B2347059B0022B6D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85656A2347059B0022B6D5 /* ViewController.swift */; };
-		1C8565702347059E0022B6D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C85656F2347059E0022B6D5 /* Assets.xcassets */; };
 		1C85657D234705FB0022B6D5 /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85657C234705FB0022B6D5 /* CurrentTime.swift */; };
 		1C85657F234706080022B6D5 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85657E234706080022B6D5 /* Alarm.swift */; };
 		1C8565832347061D0022B6D5 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8565822347061D0022B6D5 /* SleepViewController.swift */; };
@@ -25,18 +27,23 @@
 		1CA230F12356B4F1002AF16E /* alerm1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1CA230F02356B4F1002AF16E /* alerm1.mp3 */; };
 		1CA230F323583C96002AF16E /* OdaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA230F223583C95002AF16E /* OdaViewController.swift */; };
 		1CA230F523584471002AF16E /* MetoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA230F423584471002AF16E /* MetoroViewController.swift */; };
+		1CAD23F82363061700FE3877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD23F72363061700FE3877 /* Assets.xcassets */; };
 		1CF48F63235EE6760056EE3B /* Mainstory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF48F61235EE6750056EE3B /* Mainstory.storyboard */; };
+		1CF48F65235FED810056EE3B /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF48F64235FED810056EE3B /* SetViewController.swift */; };
+		1CF48F6723600C580056EE3B /* quicklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF48F6623600C580056EE3B /* quicklyViewController.swift */; };
 		1CFC807E234FA05800DA9F1A /* NetConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC807D234FA05800DA9F1A /* NetConnect.swift */; };
 		7CA51C4FC84AA6714A6391DF /* Pods_traindeta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04F2494F2CD27C91C4074E9 /* Pods_traindeta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0AA03D236CA2F6006691F3 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		1C4790012362AAE200243684 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		1C4790032362ADC000243684 /* TrainName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainName.swift; sourceTree = "<group>"; };
 		1C65D44C2358D90E00A66E57 /* WeatherConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConnect.swift; sourceTree = "<group>"; };
 		1C8565632347059B0022B6D5 /* あらーむ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "あらーむ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8565662347059B0022B6D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C8565682347059B0022B6D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1C85656A2347059B0022B6D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C85656F2347059E0022B6D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C8565742347059E0022B6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C85657C234705FB0022B6D5 /* CurrentTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentTime.swift; path = Components/CurrentTime.swift; sourceTree = "<group>"; };
 		1C85657E234706080022B6D5 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alarm.swift; path = Components/Alarm.swift; sourceTree = "<group>"; };
@@ -51,7 +58,10 @@
 		1CA230F02356B4F1002AF16E /* alerm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alerm1.mp3; sourceTree = "<group>"; };
 		1CA230F223583C95002AF16E /* OdaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaViewController.swift; sourceTree = "<group>"; };
 		1CA230F423584471002AF16E /* MetoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetoroViewController.swift; sourceTree = "<group>"; };
+		1CAD23F72363061700FE3877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CF48F62235EE6760056EE3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Components/Base.lproj/Mainstory.storyboard; sourceTree = "<group>"; };
+		1CF48F64235FED810056EE3B /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		1CF48F6623600C580056EE3B /* quicklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quicklyViewController.swift; sourceTree = "<group>"; };
 		1CFC807D234FA05800DA9F1A /* NetConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetConnect.swift; sourceTree = "<group>"; };
 		32C0135A81E1311AFAC8A573 /* Pods-traindeta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traindeta.debug.xcconfig"; path = "Target Support Files/Pods-traindeta/Pods-traindeta.debug.xcconfig"; sourceTree = "<group>"; };
 		7903B50D436911E86054B10D /* Pods-traindeta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traindeta.release.xcconfig"; path = "Target Support Files/Pods-traindeta/Pods-traindeta.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +101,7 @@
 		1C8565652347059B0022B6D5 /* traindeta */ = {
 			isa = PBXGroup;
 			children = (
+				1CAD23F72363061700FE3877 /* Assets.xcassets */,
 				1C8565662347059B0022B6D5 /* AppDelegate.swift */,
 				1C8565682347059B0022B6D5 /* SceneDelegate.swift */,
 				1C85656A2347059B0022B6D5 /* ViewController.swift */,
@@ -101,9 +112,13 @@
 				1CA230F223583C95002AF16E /* OdaViewController.swift */,
 				1CA230F423584471002AF16E /* MetoroViewController.swift */,
 				1C85659C234C5F950022B6D5 /* SelectViewController.swift */,
+				1CF48F6623600C580056EE3B /* quicklyViewController.swift */,
+				1CF48F64235FED810056EE3B /* SetViewController.swift */,
+				1C4790012362AAE200243684 /* FavoriteViewController.swift */,
+				1C0AA03D236CA2F6006691F3 /* PopupViewController.swift */,
 				1CF48F61235EE6750056EE3B /* Mainstory.storyboard */,
-				1C85656F2347059E0022B6D5 /* Assets.xcassets */,
 				1C8565742347059E0022B6D5 /* Info.plist */,
+				1C4790032362ADC000243684 /* TrainName.swift */,
 				1C85657E234706080022B6D5 /* Alarm.swift */,
 				1C65D44C2358D90E00A66E57 /* WeatherConnect.swift */,
 				1CFC807D234FA05800DA9F1A /* NetConnect.swift */,
@@ -196,8 +211,8 @@
 				1C8565902347109F0022B6D5 /* 画像 in Resources */,
 				1C856595234B02920022B6D5 /* Clock-Alarm05-2(Low).mp3 in Resources */,
 				1C85658E234710180022B6D5 /* SetUP.storyboard in Resources */,
-				1C8565702347059E0022B6D5 /* Assets.xcassets in Resources */,
 				1CA230F12356B4F1002AF16E /* alerm1.mp3 in Resources */,
+				1CAD23F82363061700FE3877 /* Assets.xcassets in Resources */,
 				1CF48F63235EE6760056EE3B /* Mainstory.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,15 +267,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CA230F323583C96002AF16E /* OdaViewController.swift in Sources */,
+				1C0AA03E236CA2F6006691F3 /* PopupViewController.swift in Sources */,
+				1CF48F65235FED810056EE3B /* SetViewController.swift in Sources */,
 				1C85657D234705FB0022B6D5 /* CurrentTime.swift in Sources */,
 				1C85656B2347059B0022B6D5 /* ViewController.swift in Sources */,
 				1C8565672347059B0022B6D5 /* AppDelegate.swift in Sources */,
 				1CA230F523584471002AF16E /* MetoroViewController.swift in Sources */,
 				1C8565692347059B0022B6D5 /* SceneDelegate.swift in Sources */,
+				1CF48F6723600C580056EE3B /* quicklyViewController.swift in Sources */,
 				1C65D44D2358D90E00A66E57 /* WeatherConnect.swift in Sources */,
+				1C4790042362ADC000243684 /* TrainName.swift in Sources */,
 				1CFC807E234FA05800DA9F1A /* NetConnect.swift in Sources */,
 				1C85659D234C5F950022B6D5 /* SelectViewController.swift in Sources */,
 				1C8565832347061D0022B6D5 /* SleepViewController.swift in Sources */,
+				1C4790022362AAE200243684 /* FavoriteViewController.swift in Sources */,
 				1C8565852347062E0022B6D5 /* HomeViewController.swift in Sources */,
 				1C85658A234706DE0022B6D5 /* TrainViewController.swift in Sources */,
 				1C85657F234706080022B6D5 /* Alarm.swift in Sources */,
@@ -332,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -386,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
