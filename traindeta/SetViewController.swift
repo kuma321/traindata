@@ -39,7 +39,7 @@ class SetViewController: UIViewController {
         super.viewDidLoad()
         sleepTimePicker.datePickerMode = UIDatePicker.Mode.time
         sleepTimePicker.setDate(Date(), animated: false)
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "グループ 65-1.png")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iPhone XR-XS Max –　統一.png")!)
     }
     
     override func viewDidAppear(_ animated: Bool) {

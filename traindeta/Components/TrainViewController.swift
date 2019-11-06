@@ -17,6 +17,9 @@ class TrainViewController: UIViewController,UITableViewDataSource,UITableViewDel
     var articles: [[String: String?]] = []
     var favour : [String] = []
     var addBtn: UIBarButtonItem!
+    var info : [String] = []
+    var status : [String] = []
+    var x = 0
     let train = ["中央線快速","中央・総武線各駅停車","八高線","伊東線","五日市線","常磐線","常磐線各駅停車","常磐線快速","鹿島線","川越線","京浜東北線・根岸線","京葉線","久留里線","武蔵野線","南武線","南武線浜川崎支線","成田線","成田線我孫子支線","成田線空港支線","青梅線","相模線","埼京線・川越線","湘南新宿ライン","総武線","総武線快速","外房線","高崎線","東金線","東海道線","鶴見線","鶴見線大川支線","鶴見線海芝浦支線","内房線","宇都宮線","山手線","横浜線","横須賀線"]
     
     
@@ -49,7 +52,7 @@ class TrainViewController: UIViewController,UITableViewDataSource,UITableViewDel
                                 json.forEach { (_, json) in
                                     let article: [String: String?] = [
                                         "train":json["odpt:trainInformationStatus"]["ja"].stringValue,
-                                        "traininfo":json["odpt:trainInformationText"].stringValue
+                                        "traininfo":json["odpt:trainInformationText"]["ja"].stringValue
                                     
                                     ]
                                     self.articles.append(article)
@@ -72,22 +75,40 @@ class TrainViewController: UIViewController,UITableViewDataSource,UITableViewDel
            let article = articles[indexPath.row]
            let train0 = train[indexPath.row]
            cell.detailTextLabel?.text = article["train"]!
+           info.append(article["traininfo"]!!)
+           status.append(article["train"]!!)
             cell.textLabel?.text = train0
             cell.accessoryType = .detailButton
            return cell
        }
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-            print(2)
-            print("\(indexPath.row)番目の行が選択されました。")
+            //ボタンの処理
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("\(indexPath.row)番セルが押されたよ！")
+        x = indexPath.row
+        print("\(x)番セルが押されたよ！")
+        print(train[x])
+        print(info[x])
         performSegue(withIdentifier:"model", sender: nil)
+        
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
-       @objc func onClick() {
+           if segue.identifier == "model" {
+            
+               let nextView = segue.destination as! PopupViewController
+    
+               nextView.train = train[x]
+               nextView.result = info[x]
+               nextView.sta = status[x]
+           }
+       }
+    
+    @objc func onClick() {
         let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "Select") as! SelectViewController
-        self.present(secondViewController, animated: true, completion: nil)}
+        self.present(secondViewController, animated: true, completion: nil)
+        
+    }
     
 }

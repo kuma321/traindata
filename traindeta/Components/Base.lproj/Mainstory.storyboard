@@ -394,34 +394,42 @@
         <!--Popup View Controller-->
         <scene sceneID="MBO-1O-OSd">
             <objects>
-                <viewController id="GIH-zG-OIR" customClass="PopupViewController" customModule="あらーむ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="GIH-zG-OIR" customClass="PopupViewController" customModule="あらーむ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="1" contentMode="scaleToFill" id="Qfe-y5-Ao3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PVf-Iu-5yG">
-                                <rect key="frame" x="0.0" y="531" width="375" height="281"/>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PVf-Iu-5yG">
+                                <rect key="frame" x="0.0" y="503" width="375" height="309"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="平常運転" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prf-xH-Pj9">
-                                        <rect key="frame" x="8" y="67" width="337" height="77"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eke-ON-Bz6">
-                                        <rect key="frame" x="138" y="135" width="105" height="54"/>
+                                        <rect key="frame" x="240" y="13" width="105" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="閉じる"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="close"/>
                                         <connections>
                                             <action selector="didTapClose:" destination="GIH-zG-OIR" eventType="touchUpInside" id="hKP-gp-A05"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="中央線快速" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCk-ka-qaW">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCk-ka-qaW">
                                         <rect key="frame" x="8" y="8" width="212" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-8o-3r7">
+                                        <rect key="frame" x="8" y="81" width="131" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prf-xH-Pj9">
+                                        <rect key="frame" x="8" y="133" width="337" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -436,6 +444,7 @@
                     <connections>
                         <outlet property="info" destination="prf-xH-Pj9" id="SWG-S8-0bI"/>
                         <outlet property="line" destination="BCk-ka-qaW" id="ivv-Ic-L2b"/>
+                        <outlet property="status" destination="ddE-8o-3r7" id="QpB-dH-Tj9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uc-R3-eSH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -503,7 +512,7 @@
         <!--Oda View Controller-->
         <scene sceneID="2Jz-kn-qNs">
             <objects>
-                <viewController id="nru-CS-uDj" customClass="OdaViewController" customModule="あらーむ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overFullScreen" id="nru-CS-uDj" customClass="OdaViewController" customModule="あらーむ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bfc-Ay-Jeb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -511,6 +520,9 @@
                         <viewLayoutGuide key="safeArea" id="6GP-D0-Iy0"/>
                     </view>
                     <navigationItem key="navigationItem" id="aEt-vH-Iwt"/>
+                    <connections>
+                        <segue destination="GIH-zG-OIR" kind="presentation" identifier="model2" modalTransitionStyle="crossDissolve" id="K6t-7a-Xyr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1E-sZ-FUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -519,7 +531,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Y6d-Bx-kDk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CTD-H3-toZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overCurrentContext" id="CTD-H3-toZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="hxJ-qq-GHP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H1h-ZK-jlG">
@@ -538,7 +550,7 @@
         <!--Metoro View Controller-->
         <scene sceneID="Sl8-nr-Pvh">
             <objects>
-                <viewController id="FWF-YO-gUr" customClass="MetoroViewController" customModule="あらーむ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overFullScreen" id="FWF-YO-gUr" customClass="MetoroViewController" customModule="あらーむ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fLG-Xz-Ovb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -546,6 +558,9 @@
                         <viewLayoutGuide key="safeArea" id="BxW-fd-LsQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="TyM-Sa-7zg"/>
+                    <connections>
+                        <segue destination="GIH-zG-OIR" kind="presentation" identifier="model3" modalTransitionStyle="crossDissolve" id="XbX-lj-EgL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kF2-zr-ax8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -554,7 +569,7 @@
         <!--Navigation Controller-->
         <scene sceneID="iNh-TZ-2MF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="azi-Fs-Awq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overCurrentContext" id="azi-Fs-Awq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Q9h-sR-xAs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gdG-hk-SVN">
@@ -617,7 +632,7 @@
         <image name="グループ 74.png" width="269" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2EV-3M-2a2"/>
+        <segue reference="XbX-lj-EgL"/>
         <segue reference="sqJ-wW-Mwt"/>
         <segue reference="IHE-JY-kMN"/>
     </inferredMetricsTieBreakers>

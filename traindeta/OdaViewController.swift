@@ -16,7 +16,9 @@ class OdaViewController: UIViewController,UITableViewDataSource,UITableViewDeleg
     var articles: [[String: String?]] = []
     var addBtn: UIBarButtonItem!
     let train=["小田急線"]
-
+    var info : [String] = []
+    var status : [String] = []
+    var x = 0
     override func viewDidLoad() {
         super.viewDidLoad()
                 self.navigationController?.popViewController(animated: true)
@@ -27,7 +29,6 @@ class OdaViewController: UIViewController,UITableViewDataSource,UITableViewDeleg
                 table.delegate = self
                table.frame = view.frame
                view.addSubview(table)
-               table.dataSource = self
         jrnet(url: "https://api-tokyochallenge.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:Odakyu&acl:consumerKey=dec8c179df3f39d48cfb49b072b0a63e08603e983acc06ae177f26307a8020ac")
                 
     }
@@ -66,6 +67,8 @@ class OdaViewController: UIViewController,UITableViewDataSource,UITableViewDeleg
         let article = articles[indexPath.row]
         let train0 = train[indexPath.row]
        cell.detailTextLabel?.text = article["train"]!
+        info.append(article["traininfo"]!!)
+        status.append(article["train"]!!)
         cell.textLabel?.text = train0
         cell.accessoryType = UITableViewCell.AccessoryType.detailButton
        return cell
@@ -74,11 +77,23 @@ class OdaViewController: UIViewController,UITableViewDataSource,UITableViewDeleg
     @objc func onClick() {
           let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "Select") as! SelectViewController
           self.present(secondViewController, animated: true, completion: nil)}
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        x = indexPath.row
         print("\(indexPath.row)番セルが押されたよ！")
-        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "PopupViewController") else { return }
-        self.present(vc, animated: false, completion: nil)
+        performSegue(withIdentifier:"model2", sender: nil)
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+           if segue.identifier == "model2" {
+            
+               let nextView = segue.destination as! PopupViewController
+    
+               nextView.train = train[x]
+               nextView.result = info[x]
+               nextView.sta = status[x]
+           }
+       }
 
 }
