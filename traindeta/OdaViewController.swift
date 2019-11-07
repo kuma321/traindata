@@ -93,6 +93,8 @@ class OdaViewController: UIViewController,UITableViewDataSource,UITableViewDeleg
                nextView.train = train[x]
                nextView.result = info[x]
                nextView.sta = status[x]
+               nextView.i =  x
+               nextView.sw =  1
            }
        }
 

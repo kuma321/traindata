@@ -102,6 +102,8 @@ class TrainViewController: UIViewController,UITableViewDataSource,UITableViewDel
                nextView.train = train[x]
                nextView.result = info[x]
                nextView.sta = status[x]
+               nextView.i =  x
+               nextView.sw = 0
            }
        }
     
