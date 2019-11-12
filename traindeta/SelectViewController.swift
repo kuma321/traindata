@@ -18,7 +18,12 @@ class SelectViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iPhone XR-XS Max –　統一.png")!)
         // Do any additional setup after loading the view.
     }
+    @IBAction func favgo(_ sender: UIButton) {
+    }
     
+    func t(key: String) -> Bool{
+           return UserDefaults.standard.object(forKey:key) != nil
+       }
 
     
 }

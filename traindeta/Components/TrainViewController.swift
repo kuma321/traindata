@@ -16,25 +16,22 @@ class TrainViewController: UIViewController,UITableViewDataSource,UITableViewDel
     let table = UITableView()
     var articles: [[String: String?]] = []
     var favour : [String] = []
-    var addBtn: UIBarButtonItem!
     var info : [String] = []
     var status : [String] = []
     var x = 0
     let train = ["中央線快速","中央・総武線各駅停車","八高線","伊東線","五日市線","常磐線","常磐線各駅停車","常磐線快速","鹿島線","川越線","京浜東北線・根岸線","京葉線","久留里線","武蔵野線","南武線","南武線浜川崎支線","成田線","成田線我孫子支線","成田線空港支線","青梅線","相模線","埼京線・川越線","湘南新宿ライン","総武線","総武線快速","外房線","高崎線","東金線","東海道線","鶴見線","鶴見線大川支線","鶴見線海芝浦支線","内房線","宇都宮線","山手線","横浜線","横須賀線"]
     
-    
     override func viewDidLoad() {
            super.viewDidLoad()
                 self.navigationController?.popViewController(animated: true)
                title = "遅延情報"
-        addBtn = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(self.onClick))
-                self.navigationItem.leftBarButtonItem = addBtn
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title:"back",style: .plain, target: self, action: #selector(self.onClick))
                table.frame = view.frame
                 table.dataSource = self
                 table.delegate = self
                view.addSubview(table)
                table.dataSource = self
-            net(url:"https://api-tokyochallenge.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:JR-East&acl:consumerKey=dec8c179df3f39d48cfb49b072b0a63e08603e983acc06ae177f26307a8020ac")
+                net(url:"https://api-tokyochallenge.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:JR-East&acl:consumerKey=dec8c179df3f39d48cfb49b072b0a63e08603e983acc06ae177f26307a8020ac")
               
     }
     override func didReceiveMemoryWarning() {
@@ -82,7 +79,7 @@ class TrainViewController: UIViewController,UITableViewDataSource,UITableViewDel
            return cell
        }
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-            //ボタンの処理
+
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

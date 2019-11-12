@@ -13,7 +13,7 @@ import SwiftyJSON
 class MetoroViewController: UIViewController,UITableViewDataSource,UITableViewDelegate{
         let table = UITableView()
        var articles: [[String: String?]] = []
-       var addBtn: UIBarButtonItem!
+       var btn: UIBarButtonItem!
         var info : [String] = []
         var status : [String] = []
         var x = 0
@@ -24,8 +24,8 @@ class MetoroViewController: UIViewController,UITableViewDataSource,UITableViewDe
         super.viewDidLoad()
         self.navigationController?.popViewController(animated: true)
                      title = "遅延情報"
-              addBtn = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(self.onClick))
-                      self.navigationItem.leftBarButtonItem = addBtn
+              btn = UIBarButtonItem(title:"back", style: .plain, target: self, action: #selector(self.onClick))
+                      self.navigationItem.leftBarButtonItem = btn
                      table.frame = view.frame
                      view.addSubview(table)
                      table.dataSource = self

@@ -10,10 +10,9 @@
 		1C0AA03E236CA2F6006691F3 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AA03D236CA2F6006691F3 /* PopupViewController.swift */; };
 		1C4790022362AAE200243684 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4790012362AAE200243684 /* FavoriteViewController.swift */; };
 		1C4790042362ADC000243684 /* TrainName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4790032362ADC000243684 /* TrainName.swift */; };
-		1C65D44D2358D90E00A66E57 /* WeatherConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C65D44C2358D90E00A66E57 /* WeatherConnect.swift */; };
+		1C4F6CD123778F1400CA0841 /* FavPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4F6CD023778F1400CA0841 /* FavPopViewController.swift */; };
 		1C8565672347059B0022B6D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8565662347059B0022B6D5 /* AppDelegate.swift */; };
 		1C8565692347059B0022B6D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8565682347059B0022B6D5 /* SceneDelegate.swift */; };
-		1C85656B2347059B0022B6D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85656A2347059B0022B6D5 /* ViewController.swift */; };
 		1C85657D234705FB0022B6D5 /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85657C234705FB0022B6D5 /* CurrentTime.swift */; };
 		1C85657F234706080022B6D5 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85657E234706080022B6D5 /* Alarm.swift */; };
 		1C8565832347061D0022B6D5 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8565822347061D0022B6D5 /* SleepViewController.swift */; };
@@ -39,11 +38,10 @@
 		1C0AA03D236CA2F6006691F3 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		1C4790012362AAE200243684 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		1C4790032362ADC000243684 /* TrainName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainName.swift; sourceTree = "<group>"; };
-		1C65D44C2358D90E00A66E57 /* WeatherConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConnect.swift; sourceTree = "<group>"; };
-		1C8565632347059B0022B6D5 /* あらーむ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "あらーむ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4F6CD023778F1400CA0841 /* FavPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavPopViewController.swift; sourceTree = "<group>"; };
+		1C8565632347059B0022B6D5 /* ITUKA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITUKA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8565662347059B0022B6D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C8565682347059B0022B6D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C85656A2347059B0022B6D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C8565742347059E0022B6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C85657C234705FB0022B6D5 /* CurrentTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentTime.swift; path = Components/CurrentTime.swift; sourceTree = "<group>"; };
 		1C85657E234706080022B6D5 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alarm.swift; path = Components/Alarm.swift; sourceTree = "<group>"; };
@@ -93,7 +91,7 @@
 		1C8565642347059B0022B6D5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C8565632347059B0022B6D5 /* あらーむ.app */,
+				1C8565632347059B0022B6D5 /* ITUKA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +102,6 @@
 				1CAD23F72363061700FE3877 /* Assets.xcassets */,
 				1C8565662347059B0022B6D5 /* AppDelegate.swift */,
 				1C8565682347059B0022B6D5 /* SceneDelegate.swift */,
-				1C85656A2347059B0022B6D5 /* ViewController.swift */,
 				1C8565822347061D0022B6D5 /* SleepViewController.swift */,
 				1C8565842347062E0022B6D5 /* HomeViewController.swift */,
 				1C85658B23470E7F0022B6D5 /* ExplainViewController.swift */,
@@ -116,12 +113,12 @@
 				1CF48F64235FED810056EE3B /* SetViewController.swift */,
 				1C4790012362AAE200243684 /* FavoriteViewController.swift */,
 				1C0AA03D236CA2F6006691F3 /* PopupViewController.swift */,
+				1C4F6CD023778F1400CA0841 /* FavPopViewController.swift */,
 				1CF48F61235EE6750056EE3B /* Mainstory.storyboard */,
 				1C8565742347059E0022B6D5 /* Info.plist */,
+				1CFC807D234FA05800DA9F1A /* NetConnect.swift */,
 				1C4790032362ADC000243684 /* TrainName.swift */,
 				1C85657E234706080022B6D5 /* Alarm.swift */,
-				1C65D44C2358D90E00A66E57 /* WeatherConnect.swift */,
-				1CFC807D234FA05800DA9F1A /* NetConnect.swift */,
 				1C85657C234705FB0022B6D5 /* CurrentTime.swift */,
 				1C85658D234710180022B6D5 /* SetUP.storyboard */,
 				1CA230F02356B4F1002AF16E /* alerm1.mp3 */,
@@ -167,7 +164,7 @@
 			);
 			name = traindeta;
 			productName = traindeta;
-			productReference = 1C8565632347059B0022B6D5 /* あらーむ.app */;
+			productReference = 1C8565632347059B0022B6D5 /* ITUKA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -267,15 +264,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CA230F323583C96002AF16E /* OdaViewController.swift in Sources */,
+				1C4F6CD123778F1400CA0841 /* FavPopViewController.swift in Sources */,
 				1C0AA03E236CA2F6006691F3 /* PopupViewController.swift in Sources */,
 				1CF48F65235FED810056EE3B /* SetViewController.swift in Sources */,
 				1C85657D234705FB0022B6D5 /* CurrentTime.swift in Sources */,
-				1C85656B2347059B0022B6D5 /* ViewController.swift in Sources */,
 				1C8565672347059B0022B6D5 /* AppDelegate.swift in Sources */,
 				1CA230F523584471002AF16E /* MetoroViewController.swift in Sources */,
 				1C8565692347059B0022B6D5 /* SceneDelegate.swift in Sources */,
 				1CF48F6723600C580056EE3B /* quicklyViewController.swift in Sources */,
-				1C65D44D2358D90E00A66E57 /* WeatherConnect.swift in Sources */,
 				1C4790042362ADC000243684 /* TrainName.swift in Sources */,
 				1CFC807E234FA05800DA9F1A /* NetConnect.swift in Sources */,
 				1C85659D234C5F950022B6D5 /* SelectViewController.swift in Sources */,
@@ -429,9 +425,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = l.traindeta;
-				PRODUCT_NAME = "あらーむ";
+				PRODUCT_NAME = ITUKA;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,9 +444,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = l.traindeta;
-				PRODUCT_NAME = "あらーむ";
+				PRODUCT_NAME = ITUKA;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -14,7 +14,7 @@ import SwiftyJSON
 class OdaViewController: UIViewController,UITableViewDataSource,UITableViewDelegate{
     let table = UITableView()
     var articles: [[String: String?]] = []
-    var addBtn: UIBarButtonItem!
+    var btn: UIBarButtonItem!
     let train=["小田急線"]
     var info : [String] = []
     var status : [String] = []
@@ -23,16 +23,16 @@ class OdaViewController: UIViewController,UITableViewDataSource,UITableViewDeleg
         super.viewDidLoad()
                 self.navigationController?.popViewController(animated: true)
                title = "遅延情報"
-        addBtn = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(self.onClick))
-                self.navigationItem.leftBarButtonItem = addBtn
+        btn = UIBarButtonItem(title:"select", style: .plain, target: self, action: #selector(self.onClick))
+                self.navigationItem.leftBarButtonItem = btn
                 table.dataSource = self
                 table.delegate = self
                table.frame = view.frame
                view.addSubview(table)
-        jrnet(url: "https://api-tokyochallenge.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:Odakyu&acl:consumerKey=dec8c179df3f39d48cfb49b072b0a63e08603e983acc06ae177f26307a8020ac")
+        net(url: "https://api-tokyochallenge.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:Odakyu&acl:consumerKey=dec8c179df3f39d48cfb49b072b0a63e08603e983acc06ae177f26307a8020ac")
                 
     }
-    func jrnet(url:String) {
+    func net(url:String) {
            Alamofire.request(url, method: .get).responseJSON { response in
                 switch response.result {
                 case.success:
@@ -75,7 +75,7 @@ class OdaViewController: UIViewController,UITableViewDataSource,UITableViewDeleg
     
     }
     @objc func onClick() {
-          let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "Select") as! SelectViewController
+          let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "back") as! SelectViewController
           self.present(secondViewController, animated: true, completion: nil)}
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -7,6 +7,7 @@ target 'traindeta' do
 
   pod "Alamofire"
   pod "SwiftyJSON"
+  pod "Alamofire-Synchronous"
 
   # Pods for traindeta
 

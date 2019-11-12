@@ -15,7 +15,6 @@ class HomeViewController: UIViewController,CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
     let alarm = Alarm()
     var currenttime = CurrentTime()
-    let weather = WeatherConnect()
     var weatherinfo: [[String: String?]] = []
     var tenkiarray: Array<String> = []
     var weatherarray: Array<String> = []
@@ -28,7 +27,6 @@ class HomeViewController: UIViewController,CLLocationManagerDelegate {
     @IBOutlet weak var time3: UILabel!
     @IBOutlet weak var time4: UILabel!
     @IBOutlet weak var time5: UILabel!
-    @IBOutlet weak var nowweather: UILabel!
     @IBOutlet weak var weather1: UIImageView!
     @IBOutlet weak var weather2: UIImageView!
     @IBOutlet weak var weather3: UIImageView!
@@ -38,7 +36,7 @@ class HomeViewController: UIViewController,CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "グループ 65-1.png")!)
+         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iPhone XR-XS Max –朝.png")!)
         currenttime.hoge = self
         setupLocationManager()
         

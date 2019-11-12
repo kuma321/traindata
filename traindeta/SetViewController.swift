@@ -49,6 +49,15 @@ class SetViewController: UIViewController {
     }
     
     @IBAction func alarmBtnWasPressed(_ sender: UIButton) {
+        let Alert: UIAlertController = UIAlertController(title:"アラーム開始",message:"アラームを開始します。アプリを終了せず、iPhoneの画面を下にしておいてください。",preferredStyle: .alert)
+        let CloseAction = UIAlertAction(title: "閉じる", style: .default) {
+            action in
+            self.n()
+        }
+        Alert.addAction(CloseAction)
+        present(Alert, animated: true, completion: nil)
+    }
+    func n(){
         alarm.selectedWakeUpTime = sleepTimePicker.date
         alarm.runTimer()
         performSegue(withIdentifier: "Sleep", sender: nil)
