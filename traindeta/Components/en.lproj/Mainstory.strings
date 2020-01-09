@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4iI-A4-SCP"; */
+"4iI-A4-SCP.text" = "Label";
+
+/* Class = "UILabel"; text = "00:00"; ObjectID = "9aD-h4-LbK"; */
+"9aD-h4-LbK.text" = "00:00";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "A22-ZA-mdJ"; */
+"A22-ZA-mdJ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "00:00"; ObjectID = "DU0-EA-rJV"; */
+"DU0-EA-rJV.text" = "00:00";
+
+/* Class = "UIButton"; normalTitle = "設定"; ObjectID = "gYm-qw-QVx"; */
+"gYm-qw-QVx.normalTitle" = "設定";
+
+/* Class = "UIButton"; normalTitle = "電車情報"; ObjectID = "i6R-sB-0dg"; */
+"i6R-sB-0dg.normalTitle" = "電車情報";
+
+/* Class = "UIButton"; normalTitle = "東京メトロ"; ObjectID = "n9D-Lb-mH6"; */
+"n9D-Lb-mH6.normalTitle" = "東京メトロ";
+
+/* Class = "UIButton"; normalTitle = "JR"; ObjectID = "nTq-fi-4Vi"; */
+"nTq-fi-4Vi.normalTitle" = "JR";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nUJ-wD-goI"; */
+"nUJ-wD-goI.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "起きる"; ObjectID = "oVf-Wo-hsW"; */
+"oVf-Wo-hsW.normalTitle" = "起きる";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qBL-eK-rmd"; */
+"qBL-eK-rmd.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qgN-IA-adB"; */
+"qgN-IA-adB.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "アラーム"; ObjectID = "vFo-Xm-yTF"; */
+"vFo-Xm-yTF.normalTitle" = "アラーム";
