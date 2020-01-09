@@ -30,7 +30,7 @@ class MetoroViewController: UIViewController,UITableViewDataSource,UITableViewDe
                      view.addSubview(table)
                      table.dataSource = self
                      table.delegate = self
-                    net(url: "https://api-tokyochallenge.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:TokyoMetro&acl:consumerKey=dec8c179df3f39d48cfb49b072b0a63e08603e983acc06ae177f26307a8020ac")
+                    net(url: "https://api-tokyochallenge.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:TokyoMetro&acl:consumerKey=")
 
     }
     
