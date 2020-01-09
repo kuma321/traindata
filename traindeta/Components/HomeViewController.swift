@@ -153,7 +153,7 @@ class HomeViewController: UIViewController,CLLocationManagerDelegate {
         }
     }
     func netconnect(lat:String,lon:String)  {
-        let URL :String =  "https://api.openweathermap.org/data/2.5/forecast?6&lat="+lat+"&lon="+lon+"&cnt=8&APPID=667086c7c86aacbf61429ad78a5023b3"
+        let URL :String =  "https://api.openweathermap.org/data/2.5/forecast?6&lat="+lat+"&lon="+lon+"&cnt=8&APPID="
         net(url: URL)
     }
 }
